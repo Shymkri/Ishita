@@ -1,0 +1,3062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Health & Wellness Business Growth Audit</title>
+    <meta name="description" content="Find the biggest growth bottleneck in your health & wellness business in just 60 minutes. Personalized audit for nutritionists, doctors, therapists, and wellness experts.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Deep Forest Green theme */
+            --bg-dark: #0d1511;
+            --bg-darker: #070b09;
+            
+            /* Warm Cream */
+            --bg-light: #f8f6f0;
+            --bg-white: #ffffff;
+            
+            /* Sage Green & Mint */
+            --primary-teal: #14532d;
+            --primary-mint: #4ade80;
+            
+            /* Warm Gold */
+            --primary-gold: #d9a05b;
+            --primary-gold-hover: #e5b366;
+            
+            --text-dark: #0f1a14;
+            --text-muted: #4b5563;
+            --text-light: #f8fcf9;
+            --text-light-muted: #9ca3af;
+            
+            --border-light: #d1d5db;
+            --border-dark: #1a271f;
+            
+            --grad-teal: linear-gradient(135deg, #166534, #15803d);
+            --grad-gold: linear-gradient(110deg, #d9a05b, #e5b366, #f3c98b);
+            --grad-dark: linear-gradient(180deg, var(--bg-dark), var(--bg-darker));
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-light); /* Enforce dark mode base */
+            background-color: var(--bg-darker);
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(20, 83, 45, 0.15), transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(74, 222, 128, 0.05), transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='rgba(255,255,255,0.03)'/%3E%3C/svg%3E");
+            background-attachment: fixed;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #f8fcf9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        @keyframes pulse-btn {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(217, 160, 91, 0.7); }
+            50% { transform: scale(1.03); box-shadow: 0 0 20px 10px rgba(217, 160, 91, 0.3); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(217, 160, 91, 0); }
+        }
+
+        .btn-gold {
+            background: linear-gradient(to right, #f3c98b, #d9a05b);
+            color: #1a1205;
+            box-shadow: 0 10px 25px rgba(217, 160, 91, 0.4);
+            border: 2px solid rgba(255,255,255,0.4);
+            animation: pulse-btn 2.5s infinite;
+        }
+
+        .btn-gold:hover {
+            animation: none;
+            transform: translateY(-2px);
+            background: linear-gradient(to right, #d9a05b, #c48a47);
+            box-shadow: 0 15px 35px rgba(217, 160, 91, 0.6);
+            color: #ffffff;
+            border-color: rgba(255,255,255,0.8);
+        }
+
+        .btn-teal {
+            background: var(--grad-teal);
+            color: white;
+            box-shadow: 0 10px 25px rgba(22, 101, 52, 0.4);
+        }
+
+        .btn-teal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(13, 148, 136, 0.5);
+        }
+
+        .cta-wrapper {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* --- Sections --- */
+        .section {
+            padding: 100px 0;
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .section { padding: 60px 0; }
+        }
+
+        .section-dark {
+            color: var(--text-light);
+        }
+
+        .section-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 38px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #f8fcf9;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            .section-title { font-size: 32px; }
+        }
+        
+        .section-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            color: var(--text-light-muted);
+            margin-bottom: 48px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        .section-dark .section-subtitle {
+            color: var(--text-light-muted);
+        }
+
+        .highlight-green {
+            background: linear-gradient(90deg, #34d399, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+        }
+        .highlight-green::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30' preserveAspectRatio='none'%3E%3Cpath d='M2 20 Q 50 35 98 10' stroke='%2310b981' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+
+        /* --- Premium Unified Card Styles --- */
+        .system-card, .bonus-card-new, .test-card, .win-card, .checklist-card, .system-problem-card, .faq-item, .choice-card, .choice-card-2 {
+            background: rgba(255, 255, 255, 0.06) !important;
+            border: 1px solid rgba(74, 222, 128, 0.3) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 10px 40px rgba(74, 222, 128, 0.08) !important;
+            transition: all 0.3s ease !important;
+            backdrop-filter: blur(12px) !important;
+        }
+        
+        .system-card:hover, .bonus-card-new:hover, .test-card:hover, .win-card:hover, .checklist-card:hover, .system-problem-card:hover, .faq-item:hover, .choice-card:hover, .choice-card-2:hover {
+            transform: translateY(-5px) !important;
+            border-color: rgba(74, 222, 128, 0.6) !important;
+            box-shadow: 0 15px 50px rgba(74, 222, 128, 0.2) !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .win-label {
+            color: #f8fcf9 !important;
+        }
+        .win-card-img-wrap {
+            border-bottom: 1px solid rgba(74, 222, 128, 0.15) !important;
+            background: transparent !important;
+        }
+
+        /* --- Hero Top Bar --- */
+        .hero-top-bar {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 8px 20px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-light-muted);
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+        .hero-top-bar span { color: var(--primary-mint); margin: 0 10px; }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--grad-dark);
+        }
+
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at center, rgba(13, 148, 136, 0.15) 0%, transparent 60%);
+            z-index: 0; pointer-events: none;
+        }
+
+        .hero .container { position: relative; z-index: 1; }
+
+        .hero-pills-wrap { display: flex; justify-content: center; gap: 12px; margin-bottom: 30px; }
+        .hero-pill-dark {
+            border: 1px solid rgba(52, 211, 153, 0.2);
+            background: rgba(13, 148, 136, 0.1);
+            color: var(--primary-mint);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .serif-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1.1;
+            color: #f8fcf9;
+            margin-bottom: 30px;
+            letter-spacing: -1.5px;
+        }
+        /* .serif-heading span specific highlight replaced by .highlight-green */
+
+        .hero-sub-text {
+            font-size: 16px;
+            color: var(--text-light-muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        .hero-sub-text strong { color: white; font-weight: 600; }
+
+        .check-pills-wrap {
+            display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 40px;
+        }
+        .check-pill {
+            border: 1px solid rgba(13, 148, 136, 0.3);
+            background: rgba(15, 23, 42, 0.6);
+            color: var(--text-light);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .check-pill span { color: var(--primary-mint); margin-right: 4px; }
+
+        .hero-btn {
+            background: linear-gradient(to right, #f3c98b, #d9a05b);
+            color: #1a1205;
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            border: 2px solid rgba(255,255,255,0.4);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 10px 25px rgba(217, 160, 91, 0.4);
+            animation: pulse-btn 2.5s infinite;
+            text-transform: uppercase;
+        }
+        .hero-btn:hover {
+            animation: none;
+            transform: translateY(-2px);
+            background: linear-gradient(to right, #d9a05b, #c48a47);
+            box-shadow: 0 15px 35px rgba(217, 160, 91, 0.6);
+            color: #ffffff;
+            border-color: rgba(255,255,255,0.8);
+        }
+        
+        .hero-btn-sub {
+            font-size: 10px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .hero-niches {
+            font-size: 10px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .hero-niches span { color: var(--primary-mint); margin: 0 12px; }
+
+        /* --- Checklist Section --- */
+        .score-card {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            border-radius: 0;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .score-bar-bg {
+            flex-grow: 1;
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .score-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--primary-mint);
+            transition: width 0.3s ease;
+            border-radius: 3px;
+        }
+        
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        @media(max-width: 768px) { .checklist-grid { grid-template-columns: 1fr; } }
+
+        .checklist-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            font-size: 15px;
+            color: var(--text-light-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .checklist-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,255,255,0.2);
+        }
+        .checklist-card.checked {
+            background: rgba(13, 148, 136, 0.1);
+            border-color: var(--primary-mint);
+            color: white;
+        }
+
+        .check-square {
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .checklist-card.checked .check-square {
+            background: var(--primary-teal);
+            border-color: var(--primary-teal);
+        }
+        .checklist-card.checked .check-square::after {
+            content: '✓';
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .checklist-result-card {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            border-radius: 0;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .checklist-result-card h4 {
+            font-size: 16px;
+            color: white;
+            margin-bottom: 6px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+        }
+        .checklist-result-card p {
+            font-size: 14px;
+            color: var(--text-light-muted);
+            margin-bottom: 0;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            box-shadow: none;
+            padding: 14px 30px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            text-transform: none;
+            letter-spacing: 0;
+            max-width: fit-content;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: background 0.2s, border 0.2s;
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        /* --- 5 Systems Section --- */
+        .system-pill {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary-gold);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 6px 14px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .system-highlight-box {
+            background: rgba(255,255,255,0.03);
+            border-left: 3px solid var(--primary-gold);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 30px auto 40px;
+            max-width: 800px;
+            text-align: left;
+            font-size: 16px;
+            color: var(--text-light-muted);
+        }
+        .system-highlight-box strong { color: white; }
+
+        .systems-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) { .systems-grid { grid-template-columns: 1fr; } }
+
+        .system-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+        .system-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .system-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+        }
+        
+        .sys-1::before { background: #ef4444; }
+        .sys-1:hover { box-shadow: 0 10px 30px rgba(239, 68, 68, 0.15); border-color: rgba(239, 68, 68, 0.3); }
+        .sys-2::before { background: #f59e0b; }
+        .sys-2:hover { box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3); }
+        .sys-3::before { background: #3b82f6; }
+        .sys-3:hover { box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.3); }
+        .sys-4::before { background: #a855f7; }
+        .sys-4:hover { box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.3); }
+        .sys-5::before { background: #ec4899; }
+        .sys-5:hover { box-shadow: 0 10px 30px rgba(236, 72, 153, 0.15); border-color: rgba(236, 72, 153, 0.3); }
+        
+        .system-card.sys-5 {
+            grid-column: 1 / -1;
+        }
+
+        .system-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .system-number {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .sys-1 .system-number { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .sys-2 .system-number { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .sys-3 .system-number { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+        .sys-4 .system-number { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+        .sys-5 .system-number { background: rgba(236, 72, 153, 0.15); color: #ec4899; }
+
+        .system-card h3 {
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .system-card p {
+            color: var(--text-light-muted);
+            margin-bottom: 24px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .system-result {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .sys-1 .system-result { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #ef4444; }
+        .sys-2 .system-result { background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; }
+        .sys-3 .system-result { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); color: #3b82f6; }
+        .sys-4 .system-result { background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); color: #a855f7; }
+        .sys-5 .system-result { background: rgba(236, 72, 153, 0.1); border: 1px solid rgba(236, 72, 153, 0.3); color: #ec4899; }
+
+        .system-problem-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .system-problem-card h3 {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 12px;
+        }
+        .system-problem-card p {
+            color: var(--text-light-muted);
+            font-size: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .system-problem-card p strong { color: white; }
+        .down-arrow-btn {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: var(--bg-dark);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        .down-arrow-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        /* --- What You Get Section --- */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        @media (max-width: 900px) { .timeline-grid { grid-template-columns: 1fr; } }
+
+        .timeline-stepper {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            padding-bottom: 40px;
+        }
+        .timeline-item:last-child { padding-bottom: 0; }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 17px;
+            top: 36px;
+            bottom: 0;
+            width: 1px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.4s ease;
+        }
+        .timeline-item.active::before {
+            background: #3b82f6;
+        }
+        .timeline-item:last-child::before { display: none; }
+
+        .timeline-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-dark);
+            border: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            z-index: 2;
+            transition: all 0.4s ease;
+        }
+        
+        .timeline-item.active .timeline-num {
+            background: rgba(59, 130, 246, 0.2);
+            border-color: #3b82f6;
+            color: #3b82f6;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+            transform: scale(1.1);
+        }
+
+        .timeline-content h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 8px;
+            padding-top: 6px;
+        }
+
+        .timeline-content p {
+            color: var(--text-light-muted);
+            font-size: 14px;
+            margin-bottom: 6px;
+            display: flex;
+            gap: 6px;
+        }
+        .timeline-content p::before { content: '·'; color: rgba(255,255,255,0.4); }
+
+        .audit-right-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .audit-box-top {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .audit-icon-box {
+            width: 50px;
+            height: 50px;
+            background: rgba(59, 130, 246, 0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3b82f6;
+        }
+        .audit-box-top h3 { color: white; font-size: 24px; margin-bottom: 4px; font-weight: 700; }
+        .audit-box-top p { color: var(--text-light-muted); font-size: 14px; margin-bottom: 0; }
+
+        .audit-box-bottom {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .audit-box-bottom h4 {
+            color: rgba(255,255,255,0.5);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .audit-check-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--text-light-muted);
+            font-size: 15px;
+        }
+        .audit-check-item:last-child { margin-bottom: 0; }
+        .audit-check-item strong { color: white; }
+        .audit-check-icon { color: #22c55e; }
+
+        .red-pill-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .red-pill {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-light-muted);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .red-pill svg { color: #ef4444; }
+
+        /* --- Bonuses Section --- */
+        .bonus-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .bonus-header-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light-muted);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .bonus-header-pill.gold-outline {
+            border: 1px solid rgba(245, 158, 11, 0.5);
+            padding: 6px 16px;
+            border-radius: 50px;
+            color: var(--primary-gold);
+            animation: pulse-gold 2s infinite;
+        }
+        .bonus-header-pill svg { color: #22c55e; }
+
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+
+        .bonus-grid-new {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 768px) { .bonus-grid-new { grid-template-columns: 1fr; } }
+
+        .bonus-card-new {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+        }
+        .bonus-card-new:hover {
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 10px 40px rgba(245, 158, 11, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .bonus-img-wrapper {
+            margin: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg-dark);
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bonus-img-wrapper img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .bonus-card-new:hover .bonus-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .bonus-body-new {
+            padding: 0 24px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bonus-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .bonus-meta-pill {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary-gold);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .bonus-meta-price {
+            color: var(--text-light-muted);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+
+        .bonus-title-new {
+            color: var(--primary-gold);
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
+        }
+
+        .bonus-desc-new {
+            color: var(--text-light-muted);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .bonus-desc-new strong { color: white; }
+
+        .bonus-checklist {
+            list-style: none;
+            margin-bottom: 24px;
+            flex: 1;
+        }
+        .bonus-checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: var(--text-light-muted);
+            font-size: 14px;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .bonus-checklist li svg { color: #22c55e; flex-shrink: 0; margin-top: 2px; }
+
+        .bonus-free-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(34, 197, 94, 0.1);
+            color: #22c55e;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            align-self: flex-start;
+        }
+
+        /* --- Stack Grid (After Bonuses) --- */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        @media (max-width: 900px) { .stack-grid { grid-template-columns: 1fr; } }
+
+        .stack-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .stack-item:hover {
+            transform: translateX(5px);
+            border-color: rgba(255,255,255,0.2);
+        }
+        .stack-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .stack-info h4 {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .stack-info p {
+            color: var(--text-light-muted);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .stack-item.total-row {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.1);
+            justify-content: space-between;
+            margin-top: 24px;
+            padding: 20px;
+        }
+        .stack-item.total-row h4 { margin: 0; font-size: 18px; color: var(--text-light-muted); }
+        .total-strike {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
+
+        .stack-footer-points {
+            margin-top: 30px;
+        }
+        .sf-point {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-light-muted);
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        .sf-point svg { color: rgba(255,255,255,0.5); flex-shrink: 0; margin-top: 2px; }
+
+        .stack-right {
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            align-self: start;
+        }
+        .sr-top {
+            background: var(--primary-teal);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        .sr-today {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        .sr-price {
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .sr-worth {
+            font-size: 14px;
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
+        .sr-bottom {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-top: none;
+            padding: 30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .sr-check {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        .sr-check li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-light-muted);
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .sr-check li svg { color: #22c55e; flex-shrink: 0; }
+        .sr-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+
+        /* --- Mentor Section (About) --- */
+        .mentor-section {
+            background: var(--bg-darker);
+            color: white;
+            padding: 80px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mentor-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+        @media (max-width: 900px) { .mentor-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+        /* Left Image Container */
+        .mentor-img-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 0.85;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mentor-shape-bg {
+            position: absolute;
+            top: 5%; left: 5%; right: 5%; bottom: 5%;
+            background: var(--primary-teal);
+            opacity: 0.15;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 1;
+        }
+        .mentor-shape-border {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 2;
+        }
+
+        .mentor-img {
+            width: 85%;
+            height: 85%;
+            background: var(--bg-dark);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 30% 70% 50% 50% / 50% 50% 70% 50%;
+            position: relative;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light-muted);
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .mentor-badge {
+            position: absolute;
+            bottom: 5%;
+            left: -10%;
+            background: var(--bg-dark);
+            border: 2px solid var(--primary-gold);
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        @media (max-width: 600px) { .mentor-badge { left: 0; transform: scale(0.8); bottom: -5%; } }
+        .mentor-badge svg { color: var(--primary-gold); margin-bottom: 8px; }
+        .mentor-badge p { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light-muted); margin: 0; line-height: 1.4; }
+        .mentor-badge strong { color: var(--primary-gold); font-size: 11px; }
+
+        /* Right Content Container */
+        .mentor-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .mentor-top-tag {
+            color: var(--primary-gold);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .mentor-top-tag::before, .mentor-top-tag::after {
+            content: '';
+            height: 1px;
+            width: 30px;
+            background: var(--primary-gold);
+            opacity: 0.5;
+        }
+        
+        .mentor-content h3 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: white;
+        }
+        /* .mentor-content h3 span removed for green gradient */
+
+        .mentor-content p {
+            color: var(--text-light-muted);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .mentor-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 30px 0;
+        }
+        .mentor-feature-pill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text-light-muted);
+            flex: 1 1 calc(50% - 12px);
+        }
+        @media (max-width: 600px) { .mentor-feature-pill { flex: 1 1 100%; } }
+        .mentor-feature-pill svg { color: var(--primary-gold); flex-shrink: 0; }
+
+        .mentor-content .btn { align-self: flex-start; }
+
+        /* --- Testimonials Redesign --- */
+        .test-section-bg {
+            position: relative;
+            background: var(--bg-darker);
+            padding: 80px 0;
+            overflow: hidden;
+        }
+        
+        .test-top-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--primary-mint);
+            border: 1px solid var(--primary-mint);
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+        }
+
+        .test-main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .test-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .test-card-video {
+            width: 260px;
+            flex-shrink: 0;
+            position: relative;
+            background: #000;
+            border-radius: 30px;
+            border: 8px solid #111;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .test-card-video::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 20px;
+            background: #111;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 10;
+        }
+        .test-card-video video {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+
+        .test-card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .test-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .test-avatar {
+            width: 56px; height: 56px;
+            border-radius: 50%;
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--primary-mint);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .test-header-text h3 {
+            font-size: 22px; color: white; margin-bottom: 4px;
+        }
+        .test-header-text p {
+            font-size: 14px; color: rgba(255,255,255,0.7); font-weight: 500;
+        }
+
+        .test-list {
+            list-style: none;
+            padding: 0; margin: 0 0 24px 0;
+        }
+        .test-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.85);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .test-list li svg {
+            color: var(--primary-mint); flex-shrink: 0; margin-top: 2px;
+        }
+
+        .test-result-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .test-result-box svg {
+            color: var(--primary-gold); flex-shrink: 0; margin-top: 2px;
+        }
+        .test-result-box p {
+            font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.5;
+        }
+        .test-highlight {
+            color: var(--primary-mint); font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .test-card { flex-direction: column; align-items: center; text-align: center; }
+            .test-header { flex-direction: column; text-align: center; }
+            .test-list li { text-align: left; }
+            .test-result-box { text-align: left; }
+        }
+
+        .test-top-pill {
+            animation: pulseGlow 3s infinite;
+        }
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        .test-card-video {
+            animation: floatVideo 6s ease-in-out infinite;
+        }
+        @keyframes floatVideo {
+            0% { transform: translateY(0px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+            50% { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(34, 197, 94, 0.2); }
+            100% { transform: translateY(0px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        }
+
+        .wins-divider {
+            display: flex; align-items: center; text-align: center; color: var(--primary-mint);
+            font-size: 22px; font-weight: 800; margin: 60px 0 40px; letter-spacing: 0.5px;
+        }
+        .wins-divider::before, .wins-divider::after {
+            content: ''; flex: 1; border-bottom: 2px solid var(--primary-mint); margin: 0 20px; opacity: 0.5;
+        }
+
+        /* Wins Grid */
+        .wins-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        @media (max-width: 900px) { .wins-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .wins-grid { grid-template-columns: 1fr; } }
+
+        .win-card {
+            background: #fdfaf6;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            border: 2px solid transparent;
+        }
+        .win-card:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 15px 35px rgba(34, 197, 94, 0.25);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .win-card-img-wrap {
+            width: 100%; height: 260px; background: #0a0e0c; display: flex; align-items: center; justify-content: center;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .win-card img {
+            max-width: 100%; max-height: 100%; object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        .win-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .win-label {
+            padding: 20px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #0d2415;
+            text-align: center;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        /* --- Choices Section Redesign --- */
+        .choices-section {
+            background: var(--bg-darker);
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .choices-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .choices-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+
+        .choice-card {
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        /* Choice 1 Style */
+        .choice-card-1 {
+            background: transparent;
+            border: 1px solid #333;
+        }
+        .choice-header-1 {
+            padding: 24px 30px;
+            border-bottom: 1px solid #333;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .choice-icon-1 {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            border: 1px solid #555;
+            display: flex; align-items: center; justify-content: center;
+            color: #aaa; flex-shrink: 0;
+        }
+        .choice-header-1 h3 {
+            font-size: 19px; color: #fff; line-height: 1.3; font-weight: 500; margin: 0;
+        }
+        .choice-body-1 {
+            padding: 30px;
+            flex: 1; display: flex; flex-direction: column;
+        }
+        .choice-list-1 {
+            list-style: none; padding: 0; margin: 0 0 30px 0;
+        }
+        .choice-list-1 li {
+            display: flex; align-items: flex-start; gap: 12px;
+            margin-bottom: 20px; color: #ddd; font-size: 16px; line-height: 1.5;
+        }
+        .choice-list-1 li svg {
+            color: #ef4444; margin-top: 6px; flex-shrink: 0;
+        }
+        .choice-footer-1 {
+            background: transparent;
+            border: 1px solid #3d3d3d;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            color: #ddd;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: auto;
+        }
+
+        /* Choice 2 Style */
+        .choice-card-2 {
+            background: transparent;
+            border: 1px solid #4ade80;
+        }
+        .choice-header-2 {
+            padding: 24px 30px;
+            border-bottom: 1px solid #4ade80;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .choice-icon-2 {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            background: #4ade80;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; flex-shrink: 0;
+        }
+        .choice-header-2 h3 {
+            font-size: 19px; color: #4ade80; line-height: 1.3; font-weight: 500; margin: 0;
+        }
+        .choice-body-2 {
+            padding: 30px;
+            flex: 1; display: flex; flex-direction: column;
+        }
+        .choice-list-2 {
+            list-style: none; padding: 0; margin: 0 0 30px 0;
+        }
+        .choice-list-2 li {
+            display: flex; align-items: flex-start; gap: 12px;
+            margin-bottom: 20px; color: #ddd; font-size: 16px; line-height: 1.5;
+        }
+        .choice-list-2 li svg {
+            color: #4ade80; margin-top: 4px; flex-shrink: 0;
+        }
+        .choice-footer-2 {
+            background: #166534;
+            border: 1px solid #22c55e;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: auto;
+        }
+
+        /* --- Who Is This For Section (Fit) --- */
+        .fit-section {
+            background: var(--bg-darker);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .fit-bg-leaves {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0.04;
+        }
+        .fit-bg-leaves svg {
+            position: absolute;
+            fill: var(--primary-mint);
+        }
+        .leaf-left {
+            top: -5%; left: -5%;
+            width: 500px; height: 500px;
+            transform: rotate(45deg);
+        }
+        .leaf-right {
+            bottom: -5%; right: -5%;
+            width: 600px; height: 600px;
+            transform: scaleX(-1) rotate(15deg);
+        }
+
+        .fit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 900px) {
+            .fit-grid { grid-template-columns: 1fr; }
+        }
+        .fit-box {
+            background: transparent;
+            border-radius: 12px;
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .fit-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 12px;
+            padding: 1px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .fit-good {
+            box-shadow: 0 0 40px rgba(34, 197, 94, 0.05), inset 0 0 40px rgba(34, 197, 94, 0.02);
+        }
+        .fit-good::before {
+            background: linear-gradient(180deg, rgba(34, 197, 94, 0.4) 0%, rgba(34, 197, 94, 0.05) 100%);
+        }
+        .fit-bad {
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.05), inset 0 0 40px rgba(239, 68, 68, 0.02);
+        }
+        .fit-bad::before {
+            background: linear-gradient(180deg, rgba(239, 68, 68, 0.4) 0%, rgba(239, 68, 68, 0.05) 100%);
+        }
+
+        .fit-title {
+            text-align: center;
+            font-size: 28px;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+        .fit-title span.text-green { color: #4ade80; }
+        .fit-title span.text-red { color: #f87171; }
+        
+        .fit-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .fit-divider::before, .fit-divider::after {
+            content: '';
+            height: 1px;
+            flex: 1;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        }
+        .fit-divider-icon {
+            padding: 0 15px;
+            color: var(--primary-gold);
+            display: flex;
+        }
+
+        .fit-subtitle {
+            color: #fca5a5;
+            font-size: 15px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .fit-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            flex: 1;
+        }
+        .fit-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-light-muted);
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        .fit-good .fit-list li svg {
+            color: #4ade80;
+            flex-shrink: 0;
+        }
+        .fit-bad .fit-list li svg {
+            color: #f87171;
+            flex-shrink: 0;
+        }
+
+        .fit-summary-box {
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-top: auto;
+        }
+        .fit-good .fit-summary-box {
+            background: rgba(34, 197, 94, 0.03);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+        .fit-good .fit-summary-box svg { color: #4ade80; }
+        
+        .fit-bad .fit-summary-box {
+            background: rgba(239, 68, 68, 0.03);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+        .fit-bad .fit-summary-box svg { color: #f87171; }
+        
+        .fit-summary-text {
+            color: var(--text-light-muted);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .fit-cta-wrapper {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+        }
+        .fit-cta-subtext {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--text-light-muted);
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        /* --- FAQ Section --- */
+        .faq-section {
+            background: var(--bg-darker);
+            padding: 100px 0;
+        }
+
+        .faq-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(13, 148, 136, 0.1);
+            color: var(--primary-mint);
+            border: 1px solid var(--primary-mint);
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .faq-heading {
+            font-size: 48px;
+            font-weight: 800;
+            color: #f8f8f8;
+            margin-bottom: 60px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            .faq-heading { font-size: 32px; }
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            padding-left: 40px;
+        }
+        @media (max-width: 768px) {
+            .faq-container { border-left: none; padding-left: 0; }
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px 24px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-mint);
+        }
+
+        .faq-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f59e0b; /* Gold/orange + sign */
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+        }
+
+        .faq-answer {
+            color: var(--text-light-muted);
+            font-size: 16px;
+            line-height: 1.6;
+            display: none;
+            padding-right: 40px;
+            padding-bottom: 20px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-mint);
+        }
+
+        /* --- Final CTA Section --- */
+        .final-cta-section {
+            background: var(--bg-darker);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .final-cta-heading {
+            font-size: 64px;
+            font-weight: 900;
+            color: #f8f8f8;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1.5px;
+        }
+        
+        .final-cta-heading .gold {
+            color: #eab308;
+        }
+
+        @media (max-width: 768px) {
+            .final-cta-heading { font-size: 40px; }
+        }
+
+        .final-cta-text {
+            font-size: 18px;
+            color: var(--text-light-muted);
+            max-width: 650px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--bg-darker);
+            color: var(--text-light-muted);
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-dark);
+            font-size: 14px;
+        }
+
+        /* --- Sticky CTA --- */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 16px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-text {
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .sticky-text span {
+            color: var(--primary-gold);
+        }
+
+        .sticky-btn {
+            padding: 12px 30px;
+            font-size: 15px;
+            max-width: 300px;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .section-title { font-size: 28px; }
+            .audit-summary { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .compare-grid { grid-template-columns: 1fr; }
+            .sticky-cta { flex-direction: column; gap: 10px; padding: 12px; }
+            .sticky-text { font-size: 14px; text-align: center; }
+            .btn { font-size: 16px; padding: 16px 24px; }
+        }
+
+        /* --- Animations & Mockups --- */
+        #olm-prog {
+            position: fixed; top: 0; left: 0; height: 3px; z-index: 9999;
+            background: var(--grad-gold); width: 0; transition: width .08s;
+            border-radius: 0 2px 2px 0;
+            box-shadow: 0 0 10px rgba(245, 158, 11, .5);
+        }
+
+        #olm-ticker {
+            background: var(--grad-teal);
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+            z-index: 100;
+            width: 100%;
+        }
+        .olm-ticker-track {
+            display: flex;
+            animation: olmTick 10s linear infinite;
+            width: max-content;
+            will-change: transform;
+        }
+        .olm-ticker-item {
+            display: flex; align-items: center; gap: 10px;
+            padding: 0 36px; font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 13px; font-weight: 800; color: white;
+            letter-spacing: .04em; white-space: nowrap; text-transform: uppercase;
+        }
+        .olm-ticker-dot { width: 5px; height: 5px; background: rgba(255,255,255,.4); border-radius: 50%; }
+        @keyframes olmTick { to { transform: translateX(-50%); } }
+
+        #olm-sbadge {
+            position: fixed; bottom: 28px; right: 20px; z-index: 800;
+            background: rgba(15, 23, 42, .95); border: 1px solid var(--primary-teal); border-radius: 10px;
+            padding: 12px 18px; display: flex; align-items: center; gap: 9px;
+            font-size: 13px; color: var(--text-light-muted);
+            backdrop-filter: blur(10px);
+            transform: translateX(160%); opacity: 0;
+            transition: transform .6s cubic-bezier(.22,1,.36,1), opacity .6s;
+            box-shadow: 0 16px 40px rgba(0,0,0,.5);
+        }
+        #olm-sbadge.show { transform: translateX(0); opacity: 1; }
+        .olm-ldot { width: 8px; height: 8px; background: var(--primary-mint); border-radius: 50%; animation: olmPulse2 2s infinite; flex-shrink: 0; }
+        #olm-sbadge strong { color: white; font-weight: 700; }
+        @keyframes olmPulse2 { 0%,100%{box-shadow:0 0 0 0 rgba(52,211,153,.5)}50%{box-shadow:0 0 0 6px rgba(52,211,153,0)} }
+
+        /* Custom Cursor */
+        @media(min-width: 1024px) {
+            body { cursor: none; }
+            a, button, .faq-question, .checklist-item { cursor: none !important; }
+        }
+        #olm-cur {
+            position: fixed; pointer-events: none; z-index: 999999;
+            width: 10px; height: 10px;
+            background: var(--primary-mint);
+            transform: translate(-50%, -50%) rotate(45deg);
+            box-shadow: 0 0 10px rgba(52, 211, 153, 0.8);
+            transition: opacity .2s ease;
+            display: none;
+        }
+        #olm-cur.hov {
+            transform: translate(-50%, -50%) rotate(45deg) scale(0);
+            opacity: 0;
+        }
+        #olm-ring {
+            position: fixed; pointer-events: none; z-index: 999998;
+            width: 40px; height: 40px;
+            border: 1px solid rgba(52, 211, 153, 0.5);
+            border-radius: 50%; transform: translate(-50%, -50%);
+            transition: border-color .25s, transform .06s linear, width .3s ease, height .3s ease, background .3s ease;
+            display: none;
+        }
+        #olm-ring.hov {
+            width: 60px; height: 60px;
+            border-color: rgba(52, 211, 153, 0.8);
+            background: rgba(52, 211, 153, 0.1);
+            backdrop-filter: blur(2px);
+        }
+        @media(min-width: 1024px) { #olm-cur, #olm-ring { display: block; } }
+
+        /* Shimmer Animation for Cards */
+        .system-card::before, .bonus-card::before, .compare-good::before {
+            content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 2px;
+            background: linear-gradient(135deg, #0d9488, #0f172a, #34d399, #0d9488); background-size: 200% 200%;
+            animation: shim 3s linear infinite;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+        }
+        @keyframes shim { 0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%} }
+        .system-card, .bonus-card, .compare-good { position: relative; }
+
+        /* Mockup Slider in Hero */
+        .mockup-slider {
+            max-width: 500px; margin: 40px auto 0; position: relative;
+            background: rgba(15,23,42,0.9); border-radius: 16px; padding: 2px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        .mockup-slider::before {
+            content: ''; position: absolute; inset: 0; border-radius: 16px; padding: 2px;
+            background: linear-gradient(135deg, #34d399, #0d9488, #020617, #34d399); background-size: 200% 200%;
+            animation: shim 3s linear infinite;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; z-index: 2;
+        }
+        .mockup-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a); padding: 24px; border-radius: 14px; text-align: left;
+        }
+        .mockup-hdr { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; text-transform: uppercase; }
+        .mockup-amt { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 42px; font-weight: 800; color: white; margin-bottom: 8px; line-height: 1; }
+        .mockup-amt span { color: var(--primary-mint); font-size: 20px; vertical-align: middle; }
+        .mockup-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-light-muted); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px; margin-top: 10px; }
+
+        /* Scroll Reveal */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <div id="olm-prog"></div>
+    <div id="olm-cur"></div>
+    <div id="olm-ring"></div>
+    <div id="olm-sbadge">
+        <div class="olm-ldot"></div>
+        <div><strong>2 Audit Slots</strong> remaining this week</div>
+    </div>
+
+    <!-- HERO TOP BAR -->
+    <div class="hero-top-bar">
+        🔥 Limited audit slots this week <span>·</span> 📍 Built for India's health & wellness pros <span>·</span> ⚡ ₹15,000+ value — today ₹499
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="section hero">
+        <div class="container">
+            <div class="hero-pills-wrap">
+                <div class="hero-pill-dark">● WELLNESS BUSINESS GROWTH AUDIT</div>
+                <div class="hero-pill-dark">⚡ LIMITED SLOTS THIS WEEK</div>
+            </div>
+
+            <h1 class="serif-heading">
+                Tired of posting content,<br>chasing leads & depending on<br><span class="highlight-green">referrals?</span>
+            </h1>
+
+            <p class="hero-sub-text">
+                In a private 60-minute audit, we'll uncover why your enquiries are inconsistent, why prospects aren't buying, and which of the <strong>5 growth systems</strong> is missing from your business — so you finally know what to fix first.
+            </p>
+
+            <div class="check-pills-wrap">
+                <div class="check-pill"><span>✓</span> Growth Audit Summary</div>
+                <div class="check-pill"><span>✓</span> Instagram Profile Audit</div>
+                <div class="check-pill"><span>✓</span> 3 Conversion Reel Ideas</div>
+            </div>
+
+            <button class="hero-btn" onclick="scrollToCta()">Book My Growth Audit — ₹499 →</button>
+            
+            <div class="hero-btn-sub">60 MINUTES · 1-ON-1 · PERSONALISED</div>
+
+            <div class="hero-niches">
+                NUTRITIONISTS <span>·</span> DIETITIANS <span>·</span> DOCTORS <span>·</span> THERAPISTS <span>·</span> YOGA TEACHERS <span>·</span> HEALTH COACHES
+            </div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div id="olm-ticker">
+        <div class="olm-ticker-track">
+            <div class="olm-ticker-item">Stop Depending on Referrals <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Scale to ₹3-5 Lakhs/Month <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Fix Your Growth Bottleneck <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Attract High-Paying Clients <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Stop Depending on Referrals <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Scale to ₹3-5 Lakhs/Month <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Fix Your Growth Bottleneck <div class="olm-ticker-dot"></div></div>
+            <div class="olm-ticker-item">Attract High-Paying Clients <div class="olm-ticker-dot"></div></div>
+        </div>
+    </div>
+
+    <!-- CHECKLIST SECTION -->
+    <section class="section section-dark">
+        <div class="container reveal">
+            <h2 class="section-title">How many <span class="highlight-green">boxes</span> can you tick?</h2>
+            <p class="section-subtitle" style="margin-bottom: 30px;">If you tick even <strong style="color:white;">one of these</strong>, this audit call could save you months of trial and error.</p>
+
+
+            <div class="checklist-grid" id="interactive-checklist">
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You rely heavily on referrals to get clients.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You post content consistently but enquiries are still unpredictable.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>Prospects often say "Let me think about it" and disappear.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You know you're good at what you do, but income doesn't reflect it.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You've invested in certifications, but not enough clients are coming in.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You struggle to confidently charge premium prices.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You're doing everything yourself — content, sales, delivery, follow-ups.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>Some months are great. Some months are stressful.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>Taking a week off would immediately affect your income.</div>
+                </div>
+                <div class="checklist-card" onclick="toggleCheck(this)">
+                    <div class="check-square"></div>
+                    <div>You're not sure what's actually stopping your business from growing.</div>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <span style="color: var(--text-light-muted);">Your score</span>
+                <div class="score-bar-bg"><div class="score-bar-fill" id="score-fill"></div></div>
+                <strong id="score-text">0 / 10</strong>
+            </div>
+
+            <div class="checklist-result-card" id="checklist-result">
+                <h4>Tick a box to see your result.</h4>
+                <p>Select the statements that apply to your business above.</p>
+            </div>
+
+            <div class="cta-wrapper" style="margin-top: 50px;">
+                <p style="margin-bottom: 20px; font-weight: 400; font-size: 16px; color: var(--text-light-muted);">And that's exactly what we'll uncover during your <strong style="color:white; font-weight:600;">Business Growth Audit Call</strong> with us.</p>
+                <button class="hero-btn" onclick="scrollToCta()" style="flex-direction: column; align-items: center; text-align: center; gap: 4px;">
+                    <span style="font-size: 17px; text-transform: uppercase; letter-spacing: 0.5px;">FIND MY BIGGEST GROWTH BOTTLENECK</span>
+                    <span style="font-size: 12px; font-weight: 600; opacity: 0.8; text-transform: none; letter-spacing: 0;">Book My Growth Audit Call for just ₹499</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 SYSTEMS SECTION -->
+    <section class="section section-dark" style="text-align: center;">
+        <div class="container reveal">
+            <div class="system-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2L1 21h22L12 2zm1 16h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                The real issue
+            </div>
+            
+            <h2 class="section-title" style="max-width: 800px; margin: 0 auto 24px;">Here's what's actually holding most health & wellness professionals <span class="highlight-green">back</span></h2>
+            
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+                Most health & wellness professionals think they have a <strong style="color:white;">lead problem</strong>. Or a <strong style="color:white;">content problem</strong>. Or a <strong style="color:white;">pricing problem</strong>. But that's rarely the real issue.
+            </p>
+            <p class="section-subtitle" style="margin-bottom: 0;">
+                To build a business that consistently earns <strong style="color:white;">₹3–5 lakhs a month</strong>, five things need to work together. And if even one is broken... <strong style="color:white;">growth becomes difficult.</strong>
+            </p>
+
+            <div class="system-highlight-box">
+                If you ticked a few boxes above, chances are <strong>one or more of these 5 growth systems is broken.</strong>
+            </div>
+
+            <div class="systems-grid">
+                <div class="system-card sys-1 reveal" style="transition-delay: 0.1s;">
+                    <div class="system-header">
+                        <div class="system-number">1</div>
+                        <h3>Your Offer</h3>
+                    </div>
+                    <p>You may be great at what you do, but if your offer isn't clear, compelling, and built around a specific problem — people won't see a reason to buy.</p>
+                    <div class="system-result">→ They scroll away.</div>
+                </div>
+                
+                <div class="system-card sys-2 reveal" style="transition-delay: 0.2s;">
+                    <div class="system-header">
+                        <div class="system-number">2</div>
+                        <h3>Your Content</h3>
+                    </div>
+                    <p>Your content gets likes, views, and saves... but not enough enquiries. You're educating people, not converting them.</p>
+                    <div class="system-result">→ Views ≠ revenue.</div>
+                </div>
+
+                <div class="system-card sys-3 reveal" style="transition-delay: 0.3s;">
+                    <div class="system-header">
+                        <div class="system-number">3</div>
+                        <h3>Your Lead Flow</h3>
+                    </div>
+                    <p>Most of your clients come from referrals. There's no consistent, predictable system to bring in new enquiries every month.</p>
+                    <div class="system-result">→ Feast and famine months.</div>
+                </div>
+
+                <div class="system-card sys-4 reveal" style="transition-delay: 0.4s;">
+                    <div class="system-header">
+                        <div class="system-number">4</div>
+                        <h3>Your Sales Process</h3>
+                    </div>
+                    <p>Prospects say "Let me think about it." "Maybe next month." Interested leads don't become paying clients.</p>
+                    <div class="system-result">→ Leads leak at close.</div>
+                </div>
+
+                <div class="system-card sys-5 reveal" style="transition-delay: 0.5s;">
+                    <div class="system-header">
+                        <div class="system-number">5</div>
+                        <h3>Your Delivery Systems</h3>
+                    </div>
+                    <p>Everything depends on you. No proper systems and processes. You can't take time off. You can't scale. More clients = more burnout.</p>
+                    <div class="system-result">→ More clients = more burnout.</div>
+                </div>
+            </div>
+
+            <div class="system-problem-card reveal" style="transition-delay: 0.6s;">
+                <h3>The problem?</h3>
+                <p>Most professionals don't know <strong>which of these is costing them the most money.</strong> That's exactly what we'll uncover during your <strong>Wellness Business Growth Audit Call.</strong></p>
+                <div class="down-arrow-btn" onclick="scrollToCta()">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M19 9l-7 7-7-7"/></svg>
+                </div>
+            </div>
+
+            <div class="cta-wrapper" style="margin-top: 80px;">
+                <button class="hero-btn" onclick="scrollToCta()" style="flex-direction: column; align-items: center; text-align: center; gap: 4px;">
+                    <span style="font-size: 17px; text-transform: uppercase; letter-spacing: 0.5px;">FIND MY BIGGEST GROWTH GAP</span>
+                    <span style="font-size: 12px; font-weight: 600; opacity: 0.8; text-transform: none; letter-spacing: 0;">Book My Growth Audit Call for just ₹499</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU GET SECTION -->
+    <section class="section section-dark">
+        <div class="container reveal">
+            <div style="text-align: center;">
+                <div class="system-pill" style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); color: #3b82f6;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    60-minute personalised call
+                </div>
+
+                <h2 class="section-title">What you get in the <span class="highlight-green">60 minutes</span> with us</h2>
+
+                <div class="red-pill-group">
+                    <div class="red-pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> Not another webinar</div>
+                    <div class="red-pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> Not another course</div>
+                    <div class="red-pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> Not a generic session</div>
+                </div>
+
+                <p class="section-subtitle" style="margin-bottom: 0;">
+                    A <strong style="color:white;">personalised business audit</strong> designed specifically for health & wellness<br>professionals — we'll review every part of your business.
+                </p>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-stepper">
+                    <div class="timeline-item">
+                        <div class="timeline-num">1</div>
+                        <div class="timeline-content">
+                            <h4>Your Profile</h4>
+                            <p>Does it build trust and position you as premium?</p>
+                            <p>Does it attract the right clients?</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">2</div>
+                        <div class="timeline-content">
+                            <h4>Your Offer</h4>
+                            <p>Is it compelling and differentiated?</p>
+                            <p>Does it make people want to buy?</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">3</div>
+                        <div class="timeline-content">
+                            <h4>Your Content</h4>
+                            <p>Is it attracting buyers or just viewers?</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">4</div>
+                        <div class="timeline-content">
+                            <h4>Your Lead Generation</h4>
+                            <p>Where are your enquiries coming from?</p>
+                            <p>Are you too dependent on referrals?</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">5</div>
+                        <div class="timeline-content">
+                            <h4>Your Sales Process</h4>
+                            <p>Where are prospects dropping off?</p>
+                            <p>Why aren't they converting?</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">6</div>
+                        <div class="timeline-content">
+                            <h4>Your Delivery Systems</h4>
+                            <p>Can your business grow without burnout?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audit-right-panel">
+                    <div class="audit-box-top">
+                        <div class="audit-icon-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div>
+                            <h3>60 minutes</h3>
+                            <p>1-on-1 with our expert team</p>
+                        </div>
+                    </div>
+
+                    <div class="audit-box-bottom">
+                        <h4>BY THE END YOU'LL KNOW</h4>
+                        <div class="audit-check-item">
+                            <div class="audit-check-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div><strong>What's slowing</strong> your growth</div>
+                        </div>
+                        <div class="audit-check-item">
+                            <div class="audit-check-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div><strong>What's costing</strong> you clients & revenue</div>
+                        </div>
+                        <div class="audit-check-item">
+                            <div class="audit-check-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div><strong>What to fix first</strong></div>
+                        </div>
+                        <div class="audit-check-item">
+                            <div class="audit-check-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div><strong>What your next 90 days</strong> should look like</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-wrapper" style="margin-top: 60px; text-align: center;">
+                <button class="hero-btn" onclick="scrollToCta()">BOOK MY AUDIT CALL NOW FOR JUST ₹499</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUSES SECTION -->
+    <section class="section section-dark">
+        <div class="container reveal">
+            <h2 class="section-title" style="text-align: center;">Get 2 bonuses worth <span class="highlight-green">₹8,000</span> absolutely <span class="highlight-green">FREE</span></h2>
+            <p class="section-subtitle" style="text-align: center;">Because finding the problem is only half the battle. We also want to help<br>you <strong style="color:white;">start fixing it immediately.</strong></p>
+
+            <div class="bonus-header-row reveal" style="transition-delay: 0.2s;">
+                <div class="bonus-header-pill"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Bonus #1 worth ₹5,000</div>
+                <div class="bonus-header-pill"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Bonus #2 worth ₹3,000</div>
+                <div class="bonus-header-pill gold-outline">Total ₹8,000 — yours free</div>
+            </div>
+
+            <div class="bonus-grid-new">
+                <div class="bonus-card-new reveal" style="transition-delay: 0.3s;">
+                    <div class="bonus-img-wrapper">
+                        <img src="./bonus1.png" alt="Bonus 1">
+                    </div>
+                    <div class="bonus-body-new">
+                        <div class="bonus-meta">
+                            <span class="bonus-meta-pill">Bonus #1</span>
+                            <span class="bonus-meta-price">₹5,000</span>
+                        </div>
+                        <h3 class="bonus-title-new">Personalized Instagram Profile Audit</h3>
+                        <p class="bonus-desc-new">Your profile is the <strong style="color:white;">first thing a potential client sees.</strong> Within seconds, they've already decided whether they trust you or not.</p>
+                        
+                        <ul class="bonus-checklist">
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> What's making your profile look amateur instead of premium</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> What's stopping ideal clients from reaching out</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> What changes could increase enquiries and conversions</li>
+                        </ul>
+
+                        <div class="bonus-free-pill">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                            Free this week
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus-card-new reveal" style="transition-delay: 0.5s;">
+                    <div class="bonus-img-wrapper">
+                        <img src="./bonus2.png" alt="Bonus 2">
+                    </div>
+                    <div class="bonus-body-new">
+                        <div class="bonus-meta">
+                            <span class="bonus-meta-pill">Bonus #2</span>
+                            <span class="bonus-meta-price">₹3,000</span>
+                        </div>
+                        <h3 class="bonus-title-new">3 Enquiry-Focused Reel Ideas For Your Niche</h3>
+                        <p class="bonus-desc-new">Most health & wellness professionals don't struggle to create content. They struggle to create <strong style="color:white;">content that brings clients.</strong></p>
+                        
+                        <ul class="bonus-checklist">
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 3 reel ideas customized to your niche</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Hooks designed to stop the scroll</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Angles designed to generate enquiries — not just views</li>
+                        </ul>
+
+                        <div class="bonus-free-pill">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                            Free this week
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="text-align: center; margin-top: 80px;">Here's Everything You Get If You Book a Call <span class="highlight-green">Today.</span></h2>
+
+            <div class="stack-grid">
+                <div class="stack-left reveal" style="transition-delay: 0.2s;">
+                    <div class="stack-item">
+                        <div class="stack-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+                        <div class="stack-info">
+                            <h4>60-Minute Wellness Business Growth Audit</h4>
+                            <p>₹7,000 value</p>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon" style="background: rgba(34, 197, 94, 0.15); color: #22c55e;"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div>
+                        <div class="stack-info">
+                            <h4>Personalized Growth Audit Summary</h4>
+                            <p style="color: #22c55e;">Included free</p>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.75 2h8.5C19.42 2 22 4.58 22 7.75v8.5C22 19.42 19.42 22 16.25 22h-8.5C4.58 22 2 19.42 2 16.25v-8.5C2 4.58 4.58 2 7.75 2z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5h.01" /></svg></div>
+                        <div class="stack-info">
+                            <h4>Instagram Profile Audit</h4>
+                            <p>₹5,000 value</p>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg></div>
+                        <div class="stack-info">
+                            <h4>3 Conversion-Focused Reel Ideas</h4>
+                            <p>₹3,000 value</p>
+                        </div>
+                    </div>
+
+                    <div class="stack-item total-row">
+                        <h4>Total value</h4>
+                        <div class="total-strike">₹15,000+</div>
+                    </div>
+
+                    <div class="stack-footer-points">
+                        <div class="sf-point">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span>Less than what most professionals spend on one certification module.</span>
+                        </div>
+                        <div class="sf-point">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                            <span>But potentially the session that finally shows you why your business isn't growing.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-right reveal" style="transition-delay: 0.4s;">
+                    <div class="sr-top">
+                        <div class="sr-today">TODAY ONLY</div>
+                        <div class="sr-price">₹499</div>
+                        <div class="sr-worth">Worth ₹15,000+</div>
+                    </div>
+                    <div class="sr-bottom">
+                        <ul class="sr-check">
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 60-min audit call</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Audit summary</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Profile audit</li>
+                            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 3 reel ideas</li>
+                        </ul>
+                        <button class="btn btn-gold sr-btn" onclick="scrollToCta()"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Claim Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="mentor-section">
+        <div class="container reveal">
+            <div class="mentor-grid">
+                <div class="mentor-img-wrapper">
+                    <div class="mentor-shape-bg"></div>
+                    <div class="mentor-shape-border"></div>
+                    <div class="mentor-img">
+                        <img src="./download - 2025-10-07T103324.457.png" alt="Ishita Kaul" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="mentor-badge">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                        <p>Helping<br><strong>Wellness Professionals</strong><br>Build Thriving, Scalable Businesses</p>
+                    </div>
+                </div>
+
+                <div class="mentor-content">
+                    <div class="mentor-top-tag">Meet The Mentor</div>
+                    <h3>Meet <span class="highlight-green">Ishita Kaul</span> &<br>The Team Behind This Audit</h3>
+                    
+                    <p>Ishita isn't just a business strategist. She's a health & wellness entrepreneur who has spent years helping wellness professionals turn their expertise into thriving businesses.</p>
+                    <p>After working closely with nutritionists, doctors, therapists, and yoga teachers, she noticed a pattern: Many were exceptional at helping clients, but struggled to grow beyond ₹50,000–₹1 lakh per month.</p>
+                    <p>Not because they lacked knowledge. But because they lacked the right systems. Over the years, our team has helped hundreds of professionals identify bottlenecks, attract enquiries, and scale to ₹3–5 lakhs per month and beyond.</p>
+                    
+                    <div class="mentor-features">
+                        <div class="mentor-feature-pill">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            <span>Health & Wellness Entrepreneur</span>
+                        </div>
+                        <div class="mentor-feature-pill">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                            <span>Business Growth Strategy</span>
+                        </div>
+                        <div class="mentor-feature-pill">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                            <span>Positioning • Enquiries • Conversions</span>
+                        </div>
+                        <div class="mentor-feature-pill">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                            <span>Identify Your Growth Bottleneck</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-gold" onclick="scrollToCta()">Book My ₹499 Audit Call <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:8px"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="test-section-bg">
+        <div class="container reveal">
+            <div style="text-align: center;">
+                <div class="test-top-pill">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    REAL CLIENT SUCCESS STORIES
+                </div>
+            </div>
+            <h2 class="section-title" style="margin-bottom: 5px;">From ₹50K Months To ₹3–5L Months:</h2>
+            <h2 style="color: var(--primary-mint); text-align: center; font-size: clamp(24px, 5vw, 36px); margin-bottom: 50px; font-weight: 700;">Watch Real Client Success Stories</h2>
+
+            <div class="test-main-grid">
+                <!-- Card 1 -->
+                <div class="test-card reveal" style="transition-delay: 0.1s;">
+                    <div class="test-card-video">
+                        <video src="./sushma_padmini_video.mp4" controls></video>
+                    </div>
+                    <div class="test-card-content">
+                        <div class="test-header">
+                            <div class="test-avatar">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                            </div>
+                            <div class="test-header-text">
+                                <h3>Sushma & Padmini</h3>
+                                <p>PCOS Reversal Experts</p>
+                            </div>
+                        </div>
+                        <ul class="test-list">
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> They had expertise.</li>
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> They had results.</li>
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> But they depended heavily on referrals.</li>
+                        </ul>
+                        <div class="test-result-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <p>After improving their positioning, lead generation, and sales systems, they built a predictable pipeline and crossed <span class="test-highlight">₹3 lakhs per month</span> consistently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="test-card reveal" style="transition-delay: 0.3s;">
+                    <div class="test-card-video">
+                        <video src="./megha_video.mp4" controls></video>
+                    </div>
+                    <div class="test-card-content">
+                        <div class="test-header">
+                            <div class="test-avatar">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="test-header-text">
+                                <h3>Megha</h3>
+                                <p>Diabetes Reversal Expert</p>
+                            </div>
+                        </div>
+                        <ul class="test-list">
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> She was getting engagement.</li>
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> She was getting views.</li>
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> She was even getting DMs.</li>
+                            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> But she wasn't converting enough clients.</li>
+                        </ul>
+                        <div class="test-result-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <p>After fixing her sales process and offer structure, she generated <span class="test-highlight">₹2.5 lakhs+</span> in revenue within the first month.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wins-divider reveal">More Client Wins</div>
+
+            <div class="wins-grid">
+                <div class="win-card reveal" style="transition-delay: 0.1s;">
+                    <div class="win-card-img-wrap"><img src="./i1.JPG" alt="Win"></div>
+                    <div class="win-label">3 high-ticket clients in<br>December + Long-term clients<br>from Jan to June</div>
+                </div>
+                <div class="win-card reveal" style="transition-delay: 0.2s;">
+                    <div class="win-card-img-wrap"><img src="./i2.jpg" alt="Win"></div>
+                    <div class="win-label">Closed for ₹27,999 –<br>Awesome work!</div>
+                </div>
+                <div class="win-card reveal" style="transition-delay: 0.3s;">
+                    <div class="win-card-img-wrap"><img src="./i3.jpg" alt="Win"></div>
+                    <div class="win-label">Closed ₹35,000 program<br>+ ₹12,000 supplement sale</div>
+                </div>
+                <div class="win-card reveal" style="transition-delay: 0.4s;">
+                    <div class="win-card-img-wrap"><img src="./i4.JPG" alt="Win"></div>
+                    <div class="win-label">Closed a client for ₹39K<br>+ ₹15K booking received</div>
+                </div>
+                <div class="win-card reveal" style="transition-delay: 0.5s;">
+                    <div class="win-card-img-wrap"><img src="./i5.jpg" alt="Win"></div>
+                    <div class="win-label">Closed 3 new clients<br>worth ₹20K, ₹15K & ₹50K</div>
+                </div>
+                <div class="win-card reveal" style="transition-delay: 0.6s;">
+                    <div class="win-card-img-wrap"><img src="./i6.jpg" alt="Win"></div>
+                    <div class="win-label">First time charged ₹500<br>(huge shift in confidence)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO IS THIS FOR / NOT FOR -->
+    <section class="fit-section">
+        <div class="fit-bg-leaves">
+            <svg class="leaf-left" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7,11.5 7,11.5C7,11.5 12,8 17,8Z"/></svg>
+            <svg class="leaf-right" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7,11.5 7,11.5C7,11.5 12,8 17,8Z"/></svg>
+        </div>
+        <div class="container reveal">
+            <div class="fit-grid">
+                <div class="fit-box fit-good">
+                    <div class="fit-title">You're Probably A<br><span class="text-green">Good Fit</span> For This Audit If...</div>
+                    <div class="fit-divider">
+                        <div class="fit-divider-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    </div>
+                    <ul class="fit-list" style="margin-bottom: 20px; flex: none;">
+                        <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> You are already into the health & wellness expertise.</li>
+                        <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> You already know how to help people.</li>
+                        <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> You already have clients getting results.</li>
+                    </ul>
+                    
+                    <p style="color: var(--text-light-muted); font-size: 15px; margin-bottom: 24px; line-height: 1.5; padding-bottom: 20px; border-bottom: 1px dashed rgba(255,255,255,0.1);">But you're starting to realise that expertise alone isn't enough to grow a business.</p>
+                    <p style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">You're at a stage where you want answers to questions like:</p>
+                    
+                    <ul class="fit-list">
+                        <li><span style="font-size: 16px; line-height: 1.2;">👉</span> Why aren't more people reaching out?</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">👉</span> Why do prospects disappear after showing interest?</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">👉</span> Why does growth still feel unpredictable?</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">👉</span> Why am I working so hard but not seeing consistent growth?</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">👉</span> What's the one thing that's actually holding my business back?</li>
+                    </ul>
+
+                    <div class="fit-summary-box">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        <div class="fit-summary-text">If these are the questions you've been asking yourself lately...This audit will give you the clarity you've been looking for.</div>
+                    </div>
+                </div>
+
+                <div class="fit-box fit-bad">
+                    <div class="fit-title">Who Should <span class="text-red">NOT</span><br>Book This Audit?</div>
+                    <div class="fit-divider">
+                        <div class="fit-divider-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    </div>
+                    <p style="color: #fca5a5; font-size: 15px; margin-bottom: 24px; text-align: center; line-height: 1.5;">This audit is not for everyone.<br>Please don't book if:</p>
+                    <ul class="fit-list">
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You haven't yet developed the skills or experience needed to confidently deliver results for clients.</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You're looking for a shortcut or overnight success.</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You're hoping one Instagram reel will solve your business problems.</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You're not willing to invest time and effort into growth.</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You're only looking for free information.</li>
+                        <li><span style="font-size: 16px; line-height: 1.2;">❌</span> You're not open to hearing what might actually be holding your business back.</li>
+                    </ul>
+                    <div class="fit-summary-box">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        <div class="fit-summary-text">This audit is designed for health & wellness professionals who are serious about building a business that grows consistently—not just hoping the next referral will save the month.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fit-cta-wrapper">
+                <button class="hero-btn" onclick="scrollToCta()">Book My ₹499 Audit Call Now <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 8px;"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+                <div class="fit-cta-subtext">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    For serious health & wellness professionals only
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2 CHOICES -->
+    <section class="choices-section">
+        <div class="container reveal" style="text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 50px;">You Have <span class="highlight-green">2 Choices</span> From Here...</h2>
+            <div class="choices-grid">
+                
+                <!-- Choice 1 -->
+                <div class="choice-card choice-card-1">
+                    <div class="choice-header-1">
+                        <div class="choice-icon-1">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </div>
+                        <h3>Choice #1 — Keep doing what you're doing</h3>
+                    </div>
+                    <div class="choice-body-1">
+                        <ul class="choice-list-1">
+                            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg> Create more content</li>
+                            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg> Wait for referrals</li>
+                            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg> Hope prospects stop saying "I'll think about it"</li>
+                            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg> Try to figure out what's wrong through trial and error</li>
+                            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg> Maybe things improve. Maybe they don't.</li>
+                        </ul>
+                        <div class="choice-footer-1">
+                            Same place. Same struggles. Same questions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choice 2 -->
+                <div class="choice-card choice-card-2">
+                    <div class="choice-header-2">
+                        <div class="choice-icon-2">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <h3>Choice #2 — Spend 60 minutes with us</h3>
+                    </div>
+                    <div class="choice-body-2">
+                        <ul class="choice-list-2">
+                            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 10 11 15 8 12"></polyline></svg> Find out exactly what's slowing your business down</li>
+                            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 10 11 15 8 12"></polyline></svg> Identify the biggest gap holding you back</li>
+                            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 10 11 15 8 12"></polyline></svg> Walk away with a clear roadmap of what to do next</li>
+                            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 10 11 15 8 12"></polyline></svg> No guessing. No assumptions. No more wondering.</li>
+                        </ul>
+                        <div class="choice-footer-2">
+                            Clarity. Direction. A clear path to ₹3-5L/month.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="margin-top: 50px;">
+                <button class="btn btn-gold" onclick="scrollToCta()">BOOK MY ₹499 AUDIT CALL NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container reveal" style="text-align: center;">
+            
+            <div class="faq-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                THE HONEST ANSWERS
+            </div>
+            
+            <h2 class="faq-heading">
+                Frequently Asked Questions
+            </h2>
+            
+            <div class="faq-container" style="text-align: left;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is this only for health & wellness professionals?
+                        <div class="faq-icon"><span>+</span></div>
+                    </div>
+                    <div class="faq-answer">
+                        Yes. This audit is specifically designed for nutritionists, dietitians, doctors, therapists, yoga teachers, health coaches, and wellness experts.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is this a sales call?
+                        <div class="faq-icon"><span>+</span></div>
+                    </div>
+                    <div class="faq-answer">
+                        No. The primary purpose is to identify your biggest growth bottleneck and provide a clear roadmap.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if I'm not earning much yet?
+                        <div class="faq-icon"><span>+</span></div>
+                    </div>
+                    <div class="faq-answer">
+                        If you're already working with clients and making 50k-1L per month and want to grow faster, this audit is for you.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Will I get actionable advice?
+                        <div class="faq-icon"><span>+</span></div>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely. You'll leave with a personalized summary and clear next steps.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long is the audit?
+                        <div class="faq-icon"><span>+</span></div>
+                    </div>
+                    <div class="faq-answer">
+                        Approximately 60 minutes.
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta-section">
+        <div class="container reveal">
+            <h2 class="final-cta-heading">Limited <span class="highlight-green">Audit Slots</span> Available.</h2>
+            <p class="final-cta-text">
+                Each audit requires preparation. Our team reviews your business before the call. Because of this, we only open a limited number of slots each week.
+                <br><br>
+                Once the slots are filled, registration closes until new availability opens up.
+            </p>
+            <button class="btn btn-gold" onclick="scrollToCta()">🔥 Check Available Slots &rarr;</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Health & Wellness Business Growth Audit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-text">
+            Ready to find your biggest bottleneck? <span>Just ₹499</span>
+        </div>
+        <button class="btn btn-gold sticky-btn" onclick="scrollToCta()">Book My Audit Now</button>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                const span = item.querySelector('span');
+                span.textContent = parent.classList.contains('active') ? '-' : '+';
+            });
+        });
+
+        // Sticky CTA Visibility
+        window.addEventListener('scroll', () => {
+            const stickyCta = document.getElementById('stickyCta');
+            if (window.scrollY > 500) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top/booking section function (Mock)
+        function scrollToCta() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            alert("This would open the booking popup or redirect to a checkout page!");
+        }
+
+        // Progress Bar
+        const progContainer = document.getElementById('olm-prog');
+        const sections = document.querySelectorAll('section');
+        progContainer.style.width = '100%';
+        progContainer.style.background = 'transparent';
+        progContainer.style.display = 'flex';
+        progContainer.style.gap = '4px';
+        progContainer.style.boxShadow = 'none';
+
+        sections.forEach(() => {
+            const dash = document.createElement('div');
+            dash.className = 'olm-prog-dash';
+            dash.style.flex = '1';
+            dash.style.height = '100%';
+            dash.style.background = 'rgba(255, 255, 255, 0.2)';
+            dash.style.transition = 'background 0.3s, box-shadow 0.3s';
+            dash.style.borderRadius = '2px';
+            progContainer.appendChild(dash);
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY + window.innerHeight * 0.3; // Trigger earlier
+            let currentSectionIndex = 0;
+            sections.forEach((sec, idx) => {
+                if (sec.offsetTop <= scrollPos) {
+                    currentSectionIndex = idx;
+                }
+            });
+            const dashes = document.querySelectorAll('.olm-prog-dash');
+            dashes.forEach((dash, idx) => {
+                if (idx <= currentSectionIndex) {
+                    dash.style.background = 'var(--grad-gold)';
+                    dash.style.boxShadow = '0 0 10px rgba(245, 158, 11, .5)';
+                } else {
+                    dash.style.background = 'rgba(255, 255, 255, 0.2)';
+                    dash.style.boxShadow = 'none';
+                }
+            });
+        });
+
+        // Scarcity Badge
+        setTimeout(() => {
+            document.getElementById('olm-sbadge').classList.add('show');
+        }, 3000);
+
+        // Custom Cursor
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            const cur = document.getElementById('olm-cur');
+            const ring = document.getElementById('olm-ring');
+            let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX; mouseY = e.clientY;
+                cur.style.left = mouseX + 'px';
+                cur.style.top = mouseY + 'px';
+                
+                // create star trail
+                if(Math.random() > 0.85) {
+                    const star = document.createElement('div');
+                    star.style.position = 'fixed';
+                    star.style.left = mouseX + 'px';
+                    star.style.top = mouseY + 'px';
+                    star.style.width = '3px'; star.style.height = '3px';
+                    star.style.background = '#34d399'; star.style.borderRadius = '50%';
+                    star.style.pointerEvents = 'none'; star.style.zIndex = '999997';
+                    star.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+                    document.body.appendChild(star);
+                    requestAnimationFrame(() => {
+                        star.style.transform = `translate(${(Math.random()-0.5)*40}px, ${(Math.random()-0.5)*40}px) scale(0)`;
+                        star.style.opacity = '0';
+                    });
+                    setTimeout(() => star.remove(), 500);
+                }
+            });
+
+            const loop = () => {
+                ringX += (mouseX - ringX) * 0.2;
+                ringY += (mouseY - ringY) * 0.2;
+                ring.style.left = ringX + 'px';
+                ring.style.top = ringY + 'px';
+                requestAnimationFrame(loop);
+            };
+            loop();
+
+            const interactables = document.querySelectorAll('a, button, .faq-question, .checklist-item');
+            interactables.forEach(el => {
+                el.addEventListener('mouseenter', () => { cur.classList.add('hov'); ring.classList.add('hov'); });
+                el.addEventListener('mouseleave', () => { cur.classList.remove('hov'); ring.classList.remove('hov'); });
+            });
+        }
+
+        // Checklist Logic
+        function toggleCheck(el) {
+            el.classList.toggle('checked');
+            const checkCount = document.querySelectorAll('.checklist-card.checked').length;
+            
+            document.getElementById('score-fill').style.width = (checkCount * 10) + '%';
+            document.getElementById('score-text').textContent = checkCount + ' / 10';
+            
+            const resCard = document.getElementById('checklist-result');
+            if(checkCount > 0) {
+                resCard.style.background = 'transparent';
+                resCard.style.borderColor = 'transparent';
+                resCard.innerHTML = `<h4 style="color:var(--primary-mint)">Growth Bottleneck Detected</h4><p>If you ticked even one box... There's a very good chance you don't have a knowledge problem. You have a business growth bottleneck.</p>`;
+            } else {
+                resCard.style.background = 'transparent';
+                resCard.style.borderColor = 'transparent';
+                resCard.innerHTML = `<h4>Tick a box to see your result.</h4><p>Select the statements that apply to your business above.</p>`;
+            }
+        }
+
+        // Scroll Reveal Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section-title, .section-subtitle, .system-card, .audit-item, .bonus-card, .bonus-card-new, .bonus-header-row, .checklist-card, .score-card, .checklist-result-card, .system-problem-card, .mockup-slider, .container.reveal, .stack-left, .stack-right, .test-card, .wins-divider, .win-card').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Timeline Scroll Animation
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        window.addEventListener('scroll', () => {
+            const triggerBottom = window.innerHeight * 0.7; // triggers when item is 70% down the screen
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < triggerBottom) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
