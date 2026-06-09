@@ -227,17 +227,32 @@
         /* --- Hero Top Bar --- */
         .hero-top-bar {
             background: rgba(15, 23, 42, 0.95);
-            padding: 8px 20px;
-            text-align: center;
+            padding: 8px 0;
             font-size: 11px;
             font-weight: 600;
             color: var(--text-light-muted);
             letter-spacing: 0.5px;
             border-bottom: 1px solid rgba(13, 148, 136, 0.2);
-            position: relative;
-            z-index: 10;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            display: flex;
+        }
+        .hero-top-bar-track {
+            display: flex;
+            width: max-content;
+            animation: heroTick 15s linear infinite;
+        }
+        .hero-top-bar-track > div {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            padding-right: 20px;
         }
         .hero-top-bar span { color: var(--primary-mint); margin: 0 10px; }
+        @keyframes heroTick { to { transform: translateX(-50%); } }
 
         /* --- Hero Section --- */
         .hero {
@@ -355,11 +370,11 @@
             border: none !important;
             box-shadow: none !important;
             border-radius: 0;
-            padding: 20px 24px;
+            padding: 10px 24px;
             display: flex;
             align-items: center;
             gap: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             font-weight: 600;
         }
         .score-bar-bg {
@@ -436,7 +451,7 @@
             border: none !important;
             box-shadow: none !important;
             border-radius: 0;
-            padding: 24px;
+            padding: 10px 24px;
             text-align: center;
             transition: all 0.3s;
         }
@@ -1930,11 +1945,40 @@
 
         /* --- Responsive --- */
         @media (max-width: 768px) {
+            .section, .mentor-section, .test-section-bg, .fit-section, .choices-section, .faq-section, .final-cta-section {
+                padding: 40px 0 !important;
+            }
+            .fit-section { padding-bottom: 10px !important; }
+            .choices-section { padding-top: 10px !important; padding-bottom: 10px !important; }
+            .faq-section { padding-top: 10px !important; padding-bottom: 10px !important; }
+            .final-cta-section { padding-top: 10px !important; }
+            .faq-heading { margin-bottom: 24px !important; }
+            .faq-pill { margin-bottom: 12px !important; }
+            .hero { padding: 30px 0 30px !important; }
+            .hero-sub-text { margin-bottom: 20px; }
+            .hero-pills-wrap { gap: 6px; }
+            .hero-pill-dark { font-size: 7.5px; padding: 4px 8px; letter-spacing: 0; white-space: nowrap; }
+            .check-pills-wrap { flex-wrap: nowrap; gap: 6px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; margin-bottom: 24px; }
+            .check-pill { font-size: 8px; padding: 4px 8px; white-space: nowrap; flex-shrink: 0; }
+            .red-pill-group { flex-wrap: nowrap; gap: 4px; justify-content: center; }
+            .red-pill { font-size: 7.5px; padding: 3px 6px; white-space: nowrap; }
+            .red-pill svg { width: 8px; height: 8px; margin-right: 2px; }
+            .hero-btn-sub { margin-top: 12px; margin-bottom: 30px; }
+            .hero-niches { font-size: 6px; letter-spacing: 0; white-space: nowrap; }
+            .hero-niches span { margin: 0 4px; }
             .hero h1 { font-size: 36px; }
             .section-title { font-size: 28px; }
+            .bonus-header-row { flex-wrap: nowrap; gap: 4px; justify-content: center; }
+            .bonus-header-pill { font-size: 7.5px; white-space: nowrap; gap: 2px; }
+            .bonus-header-pill svg { width: 8px; height: 8px; }
+            .bonus-header-pill.gold-outline { padding: 3px 6px; }
             .audit-summary { grid-template-columns: 1fr; }
             .about-grid { grid-template-columns: 1fr; }
             .compare-grid { grid-template-columns: 1fr; }
+            .mentor-content { align-items: center; text-align: center; }
+            .mentor-top-tag { justify-content: center; width: 100%; }
+            .mentor-content h3 { font-size: 28px; }
+            .mentor-content .btn { align-self: center; }
             .sticky-cta { flex-direction: column; gap: 10px; padding: 12px; }
             .sticky-text { font-size: 14px; text-align: center; }
             .btn { font-size: 16px; padding: 16px 24px; }
@@ -2069,7 +2113,10 @@
 
     <!-- HERO TOP BAR -->
     <div class="hero-top-bar">
-        🔥 Limited audit slots this week <span>·</span> 📍 Built for India's health & wellness pros <span>·</span> ⚡ ₹15,000+ value — today ₹499
+        <div class="hero-top-bar-track">
+            <div>🔥 Limited audit slots this week <span>·</span> 📍 Built for India's health & wellness pros <span>·</span> ⚡ ₹15,000+ value — today ₹499</div>
+            <div>🔥 Limited audit slots this week <span>·</span> 📍 Built for India's health & wellness pros <span>·</span> ⚡ ₹15,000+ value — today ₹499</div>
+        </div>
     </div>
 
     <!-- HERO SECTION -->
@@ -2179,7 +2226,7 @@
                 <p>Select the statements that apply to your business above.</p>
             </div>
 
-            <div class="cta-wrapper" style="margin-top: 50px;">
+            <div class="cta-wrapper" style="margin-top: 25px;">
                 <p style="margin-bottom: 20px; font-weight: 400; font-size: 16px; color: var(--text-light-muted);">And that's exactly what we'll uncover during your <strong style="color:white; font-weight:600;">Business Growth Audit Call</strong> with us.</p>
                 <button class="hero-btn" onclick="scrollToCta()" style="flex-direction: column; align-items: center; text-align: center; gap: 4px;">
                     <span style="font-size: 17px; text-transform: uppercase; letter-spacing: 0.5px;">FIND MY BIGGEST GROWTH BOTTLENECK</span>
@@ -2537,7 +2584,7 @@
 
                 <div class="mentor-content">
                     <div class="mentor-top-tag">Meet The Mentor</div>
-                    <h3>Meet <span class="highlight-green">Ishita Kaul</span> &<br>The Team Behind This Audit</h3>
+                    <h3>Meet <span class="highlight-green">Ishita Kaul</span> & The Team Behind This Audit</h3>
                     
                     <p>Ishita isn't just a business strategist. She's a health & wellness entrepreneur who has spent years helping wellness professionals turn their expertise into thriving businesses.</p>
                     <p>After working closely with nutritionists, doctors, therapists, and yoga teachers, she noticed a pattern: Many were exceptional at helping clients, but struggled to grow beyond ₹50,000–₹1 lakh per month.</p>
@@ -2786,7 +2833,7 @@
 
             </div>
 
-            <div style="margin-top: 50px;">
+            <div style="margin-top: 25px;">
                 <button class="btn btn-gold" onclick="scrollToCta()">BOOK MY ₹499 AUDIT CALL NOW</button>
             </div>
         </div>
